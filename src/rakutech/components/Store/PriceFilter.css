@@ -1,0 +1,32 @@
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  background-color: #F6F7F8;
+  width: 270px;
+}
+
+.price .filter__price {
+  padding-left: 20px;
+}
+
+.price .filter__price .slider__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bolder;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price .filter__price .slider {
+  width: 95%;
+}
+/*# sourceMappingURL=PriceFilter.css.map */

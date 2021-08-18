@@ -1,0 +1,80 @@
+@import 'Header.scss';
+
+.product_banner{
+
+    display: flex;
+    background: rgb(255,72,88);
+    background: linear-gradient(90deg, rgba(255,72,88,1) 10%, rgba(143,101,255,1) 90%);
+    height: 650px;
+    margin: 0;
+    align-items: center;
+
+
+    h1,p,a{
+
+        margin: 0 0 0 200px;
+        display: flex;
+        align-self: flex-start;
+
+    }
+
+    .product_previous, .product_next{
+
+        flex-basis: 15%;
+
+        i{
+
+            font-size: 40px;
+
+        }
+
+    }
+
+    .product_previous{
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .product_banner_text{
+
+        flex-direction: column;
+        color: #FFFFFF;
+        flex-basis: 35%;
+        justify-items: flex-start;
+
+
+        h1{
+
+            font-size: 32px;
+
+        }
+            
+        p{
+
+            margin-top:40px;
+            font-size: 14px;
+            width: 450px;
+
+        }
+
+        a{
+
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 40px;
+            color: #FFFFFF;
+    
+        }
+
+    }
+
+    .product_banner_image{
+
+        display: flex;
+        flex-basis: 35%;
+
+    }
+}
+

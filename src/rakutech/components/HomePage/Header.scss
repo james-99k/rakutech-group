@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../../fonts/ProximaNova-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+$body-margin: 0px 350px 0 350px;
+$div-padding: 0px 350px 0 350px;
+$marker: 1px solid black;
+$font: 'Proxima Nova Rg';
+
+body{
+
+    font-family: $font;
+
+}
+
+.header{
+
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: $div-padding;
+    padding-top: 5px;
+
+    .language_switcher{
+
+        display: flex;
+        align-self: flex-start;
+        flex-basis: 20%;
+
+    }
+
+    #language, #currency{
+        
+        margin-right: 20px;
+        border: 1px solid transparent;
+
+    }
+
+    .session_details{
+
+        display: flex;
+        flex-basis: 80%;
+        align-self: flex-end;
+        justify-content: flex-end;
+        padding: 5px 0 5px 0px;
+        font-size: 14px;
+
+        .profile{
+
+            margin-right: 20px;
+            font-weight: bolder;
+
+            a{
+
+                text-decoration: none;
+                color: black;
+
+            }
+
+        }
+
+        .basket {
+            
+            display: flex;
+            font-weight: bolder;
+
+            i{
+                margin-right: 5px;
+                font-size: 14px;
+            }
+
+            a{
+                color: black;
+                font-size: 14px;
+                text-decoration: none;
+                list-style-type: none;
+            }
+
+            .cost{
+            
+            display: flex;
+            margin-left: 5px;
+            color: gray;
+            font-size: 14px;
+            font-weight: normal;
+
+        }
+    }
+
+    .session_search{
+
+        .session_search_box{
+
+            width: 25px;
+            border: 1px solid transparent;
+
+        }
+
+        button{
+
+            border: 1px solid transparent;
+            background-color: transparent;
+
+        }
+
+    }
+
+    }
+
+    
+
+}
+
+.navigation_banner{
+
+    display: flex;
+    flex-direction: column;
+
+    .logo{
+
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: bold;
+        flex-basis: 100%;
+        margin-top: 20px;
+        
+        a{
+
+            text-decoration: none;
+
+        }
+
+        .logoLink{
+
+            display: flex;
+    
+        }
+    
+        .first{
+    
+            color: #2E2E2E;
+    
+        }
+    
+        .last{
+    
+            color: #FD2E2E;
+    
+        }
+    
+    }
+    
+    .navigation_bar{
+    
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        padding: 0px 0 40px 0px;
+    
+        ul{
+            
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+
+            a{
+        
+                text-decoration: none;
+                margin: 0px 40px 0 40px;
+                font-weight: semibold;
+                color: #22262A;
+                font-weight: bolder;
+        
+                &:hover{
+        
+                    color: #33A0FF;
+        
+                }
+        
+            }
+
+        }
+    
+    }
+
+}
+
+
+
+.product_banner{
+
+    display: flex;
+    background: rgb(255,72,88);
+    background: linear-gradient(90deg, rgba(255,72,88,1) 10%, rgba(143,101,255,1) 90%);
+    height: 650px;
+    margin: 0;
+    align-items: center;
+
+
+    h1,p,a{
+
+        margin: 0 0 0 200px;
+        display: flex;
+        align-self: flex-start;
+
+    }
+
+    .product_previous, .product_next{
+
+        flex-basis: 15%;
+
+        i{
+
+            font-size: 40px;
+
+        }
+
+    }
+
+    .product_previous{
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .product_banner_text{
+
+        flex-direction: column;
+        color: #FFFFFF;
+        flex-basis: 35%;
+        justify-items: flex-start;
+
+
+        h1{
+
+            font-size: 32px;
+
+        }
+            
+        p{
+
+            margin-top:40px;
+            font-size: 14px;
+            width: 450px;
+
+        }
+
+        a{
+
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 40px;
+            color: #FFFFFF;
+    
+        }
+
+    }
+
+    .product_banner_image{
+
+        display: flex;
+        flex-basis: 35%;
+
+    }
+}
+
+
+// DROPDOWN MENU
+
+
+ul 
+{
+    overflow-y: hidden;
+}
+
+li a, .dropbtn {
+
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown_content {
+
+    display: flex;
+    display: none;
+    flex-basis: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 1;
+    border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+    padding: 10px 10px 30px 10px;
+    margin-left: 20px;
+    max-height: 230px;
+    height: 230px;
+    width: 1000px;
+
+    .content_container{
+
+        h2{
+
+            padding-left: 45px;
+            color: #C1C8CE;
+            font-size: 18px;
+
+        }
+
+        a{
+
+            font-size: 14px;
+
+        }
+
+    }
+
+    .dropdown_container{
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}
+
+.dropdown_content a {
+
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown:hover .dropdown_content {
+
+    display: block;
+
+}
+
+
+

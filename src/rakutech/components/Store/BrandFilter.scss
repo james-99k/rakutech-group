@@ -1,0 +1,43 @@
+.brand{
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background-color: #F6F7F8;
+    border-radius: 4px;
+
+    .filter__brand{
+        
+        padding-left: 20px;
+
+        .list_box{
+
+            display: flex;
+            justify-content: space-between;
+    
+            ul{
+    
+                padding: 0px;
+                list-style-type: none;
+    
+            }
+
+            .category{
+
+                flex-basis: 50%;
+
+                &__count{
+
+                    justify-content: flex-end;
+                    padding-right: 20px;
+
+                }
+
+            }
+    
+        }
+    
+
+    }
+}

@@ -1,0 +1,41 @@
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 270px;
+  border-radius: 4px;
+  background-color: #F6F7F8;
+}
+
+.filter__container {
+  padding-left: 20px;
+}
+
+.filter__container__header {
+  font-size: 18px;
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__list ul {
+  list-style-type: none;
+}
+
+.filter__list ul h6 {
+  font-size: 14px;
+}
+
+.filter__list .number {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.filter__list .category {
+  margin-left: -40px;
+}
+/*# sourceMappingURL=AccessoriesFilter.css.map */

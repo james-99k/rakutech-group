@@ -1,0 +1,25 @@
+.page_search{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .page_search_box{
+
+        border: 2px solid #F6F7F8;
+        width: 600px;
+        height: 60px;
+
+    }
+
+    .search_button{
+
+        background-color:  #2E90E5;
+        width: 120px;
+        border: 1px solid transparent;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+        color: white;
+    }
+
+}

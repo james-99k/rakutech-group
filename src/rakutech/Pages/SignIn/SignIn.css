@@ -1,0 +1,284 @@
+.main_container .form__side .form__container .user__name, .main_container .form__side .form__container .user__email, .main_container .form__side .form__container .user__password {
+  padding-left: 15px;
+}
+
+body {
+  margin: 0% auto;
+  padding: 0%;
+}
+
+.background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(172, 172, 172, 0.52)), to(rgba(0, 0, 0, 0.93))), url("../../images/domenico-loia-hGV2TfOh0ns-unsplash@2x.png");
+  background-image: linear-gradient(to bottom, rgba(172, 172, 172, 0.52), rgba(0, 0, 0, 0.93)), url("../../images/domenico-loia-hGV2TfOh0ns-unsplash@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 130px 100px 130px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.main_container .non_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_container .non_form .company_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #a83232;
+  font-size: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .non_form .company_logo a {
+  text-decoration: none;
+  color: #a83232;
+}
+
+.main_container .non_form .company_logo .first {
+  color: white;
+}
+
+.main_container .non_form .company_logo .home__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_container .non_form .bar {
+  position: relative;
+  top: -25px;
+  height: 5px;
+  width: 50px;
+  background-color: #B2002D;
+}
+
+.main_container .non_form p {
+  position: relative;
+  top: -10px;
+  font-size: 16px;
+  color: white;
+}
+
+.main_container .form__side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main_container .form__side .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 70px 30px 30px 30px;
+  width: 370px;
+}
+
+.main_container .form__side .form__container--inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .form__side .form__container h1 {
+  font-size: 24px;
+}
+
+.main_container .form__side .form__container .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .form__side .form__container .header__container .log_in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main_container .form__side .form__container .header__container .log_in a {
+  padding-left: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.main_container .form__side .form__container .input__name, .main_container .form__side .form__container .input__email, .main_container .form__side .form__container .input__password {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_container .form__side .form__container .input__name label, .main_container .form__side .form__container .input__email label, .main_container .form__side .form__container .input__password label {
+  font-weight: bolder;
+}
+
+.main_container .form__side .form__container .user__name, .main_container .form__side .form__container .user__email, .main_container .form__side .form__container .user__password {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+  border: #C4C4C4 1px solid;
+}
+
+.main_container .form__side .form__container .mailer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  left: 10px;
+}
+
+.main_container .form__side .form__container .mailer .user__mailer {
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+}
+
+.main_container .form__side .form__container .sign__up {
+  width: 350px;
+  height: 48px;
+  background-color: #FD2E2E;
+  border-radius: 8px;
+  color: white;
+  border: 0;
+}
+
+.main_container .form__side .form__container .terms_agreement {
+  width: 196px;
+  height: 28px;
+  font-size: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form__side .form__container--inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__side .form__container .header__container h1 {
+  font-size: 35px;
+}
+
+.form__side .form__container .sign__in--apple, .form__side .form__container .sign__in--facebook {
+  width: 327px;
+  height: 48px;
+  border-radius: 6px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 20% 40%;
+}
+
+.form__side .form__container .sign__in--apple {
+  background-color: black;
+  color: white;
+  margin-bottom: 15px;
+  background-image: url(../../images/apple-64.png);
+}
+
+.form__side .form__container .sign__in--facebook {
+  background-color: blue;
+  color: white;
+  background-image: url(../../images/fb-64.png);
+}
+
+.form__side .form__container .divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+}
+
+.form__side .form__container .divider hr {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  height: 1px;
+  background-color: #adabab;
+  border: 1px solid transparent;
+}
+
+p a {
+  text-decoration: none;
+  color: #B2002D;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=SignIn.css.map */

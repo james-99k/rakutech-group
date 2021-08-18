@@ -1,0 +1,104 @@
+.product_banner_sub{
+
+    display: flex;
+    height: 600px;
+    background-color: #2E90E5;
+    margin: 100px 0 0 0;  
+    align-items: center;
+    padding: 0 300px 0 350px;
+    z-index: -1;
+    position: relative;
+
+    &.small{
+
+        overflow: hidden;
+        display: flex;
+        background-color:#2E90E5;
+        width: 870px;
+        height: 340px;
+        padding: 0 100px 0 100px;
+
+    }
+
+    .product_banner_text_sub{
+
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        flex-basis: 20%;
+        justify-content: flex-start;
+
+        &.small{
+            
+            display: flex;
+            padding:0px;
+            margin: 0px;
+
+            h1{
+
+                font-size: 42px;
+
+            }
+
+            p{
+
+                font-size: 16px;
+
+            }
+
+            a{
+
+                font-size: 14px;
+
+            }
+
+        }
+
+        h1{
+
+            font-size: 66px;
+            font-weight: lighter;
+
+        }
+            
+        p{
+
+            margin-top:10px;
+            font-size: 24px;
+            width: 450px;
+            font-weight: normal;
+
+        }
+
+        a{
+
+            margin-top: 80px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #FFFFFF;
+    
+        }
+
+    }
+
+    .product_banner_image_sub{
+
+        display: flex;
+        justify-content: center;
+        flex-basis: 80%;
+        z-index: -1;
+
+        &.small{
+
+            top: -50px;
+            margin-left: 70px;
+            width: 465px;
+            height: 439px;
+            background-image: url("../../images/iPhone6.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+    }
+}
