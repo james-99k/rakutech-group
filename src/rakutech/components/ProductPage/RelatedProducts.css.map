@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAA;EAEb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAiBtB;;AArBD,AAMI,iBANa,CAMb,kBAAkB,CAAA;EAEd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,GAAG;EACV,eAAe,EAAE,YAAY;CAQhC;;AAnBL,AAaQ,iBAbS,CAMb,kBAAkB,CAOd,UAAU,CAAA;EAEN,KAAK,EAAE,GAAG;CAEb",
+    "sources": [
+        "RelatedProducts.scss"
+    ],
+    "names": [],
+    "file": "RelatedProducts.css"
+}

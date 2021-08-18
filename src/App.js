@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Router, Switch, Route, Link } from "react-router-dom";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Login from "./components/login.component";
@@ -20,6 +19,15 @@ import { history } from './helpers/history';
 
 // import AuthVerify from "./common/auth-verify";
 import EventBus from "./common/EventBus";
+
+//-------------------------------------------------------RAKUTECH PAGES
+import RakutechHome from "./rakutech/Pages/HomePage/Home"
+import RakutechLogin from "./rakutech/Pages/SignIn/SignIn"
+import RakutechSignUp from "./rakutech/Pages/SignUp/SignUp"
+import RakutechStore from "./rakutech/Pages/Store/Store"
+import RakutechProduct from "./rakutech/Pages/Products/ProductPage"
+import RakutechCheckout from "./rakutech/Pages/Checkout/Checkout"
+
 
 class App extends Component {
   constructor(props) {
@@ -72,7 +80,7 @@ class App extends Component {
     return (
       <Router history={history}>
         <div>
-          <nav className="navbar navbar-expand navbar-dark bg-dark">
+          {/* <nav className="navbar navbar-expand navbar-dark bg-dark">
             <Link to={"/"} className="navbar-brand">
               RAKUTECH
             </Link>
@@ -136,13 +144,17 @@ class App extends Component {
                 </li>
               </div>
             )}
-          </nav>
+          </nav> */}
 
           <div className="container mt-3">
             <Switch>
-              <Route exact path={["/", "/home"]} component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/register" component={Register} />
+              <Route exact path={["/", "/home"]} component={RakutechHome} />
+              <Route exact path="/SignIn" component={RakutechLogin} />
+              <Route exact path="/SignUp" component={RakutechSignUp} />
+              <Route exact path="/Store" component={RakutechStore} /> 
+              <Route exact path="/Checkout" component={RakutechCheckout} /> 
+              <Route exact path="/Products" component={RakutechProduct} /> 
+                           
               <Route exact path="/profile" component={Profile} />
               <Route path="/user" component={BoardUser} />
               <Route path="/mod" component={BoardSeller} />

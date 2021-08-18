@@ -1,0 +1,43 @@
+.filter{
+
+    display: flex;
+    width: 270px;
+    border-radius: 4px;
+    background-color: #F6F7F8;
+
+    &__container{
+
+        padding-left: 20px;
+
+        &__header{
+
+            font-size: 18px;
+
+        }
+
+    }
+
+    &__list{
+
+        display: flex;
+
+        ul{
+        
+            list-style-type: none;
+
+            h6{
+                font-size: 14px;
+            }
+        }
+
+        .number{
+            justify-content: flex-end;
+        }
+        .category{
+
+            margin-left: -40px;
+
+        }
+    }
+
+}
