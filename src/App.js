@@ -28,6 +28,8 @@ import RakutechStore from "./rakutech/Pages/Store/Store"
 import RakutechProduct from "./rakutech/Pages/Products/ProductPage"
 import RakutechCheckout from "./rakutech/Pages/Checkout/Checkout"
 
+//-------------------------------------------------------Material-UI
+import ProductView from "./rakutech/Pages/MaterialUI/Pages/ProductViewPage"
 
 class App extends Component {
   constructor(props) {
@@ -80,7 +82,7 @@ class App extends Component {
     return (
       <Router history={history}>
         <div>
-          {/* <nav className="navbar navbar-expand navbar-dark bg-dark">
+           <nav className="navbar navbar-expand navbar-dark bg-dark">
             <Link to={"/"} className="navbar-brand">
               RAKUTECH
             </Link>
@@ -144,7 +146,7 @@ class App extends Component {
                 </li>
               </div>
             )}
-          </nav> */}
+          </nav> 
 
           <div className="container mt-3">
             <Switch>
@@ -154,7 +156,11 @@ class App extends Component {
               <Route exact path="/Store" component={RakutechStore} /> 
               <Route exact path="/Checkout" component={RakutechCheckout} /> 
               <Route exact path="/Products" component={RakutechProduct} /> 
+              <Route exact path="/ProductView" component={ProductView}/>
                            
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/profile" component={Profile} />         
               <Route exact path="/profile" component={Profile} />
               <Route path="/user" component={BoardUser} />
               <Route path="/mod" component={BoardSeller} />

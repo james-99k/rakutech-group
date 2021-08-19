@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EAEA,gBAAgB,EAAE,SAAS;CAE9B",
+    "sources": [
+        "ProductViewPage.scss"
+    ],
+    "names": [],
+    "file": "ProductViewPage.css"
+}
