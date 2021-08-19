@@ -10,6 +10,7 @@ import localThumb5 from '../../images/products/ipad-2020-hero-landing.jpg'
 import localThumb6 from '../../images/products/alu-silver-sport-white-s3-2up_gps_varend.png'
 import localThumb7 from '../../images/products/macbook-air-space-gray-config-201810.jpg'
 import localThumb8 from '../../images/products/MWP22.jpg'
+import { Col } from 'react-bootstrap';
 
 function LocalProducts(){
 
@@ -73,37 +74,40 @@ function LocalProducts(){
     ] 
 
     const newproducts = localproducts.map(products => 
-        
-        <div className="container card">
-            <div className="card__image">
-                <img src={products.productImage} alt="" className="card__image--pic"/>
+
+            <div class="col-md-4">
+                    <div className="card">
+                        <div className="card__image">
+                            <img src={products.productImage} alt="" className="card__image--pic"/>
+                        </div>
+                        <div className="card__title">
+                            {products.name}
+                        </div>
+                        <div className="card__rating">
+                            <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
+                            <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
+                            <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
+                            <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
+                            <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
+                            <FontAwesomeIcon icon={faStar} className="card__rating--gray"/>
+                        </div>
+                        <div className="card__price">
+                            <div className="card__price--discounted">
+                                {products.discountedPrice}
+                            </div>
+                            <div className="card__price--original">
+                                {products.original_price}
+                            </div>
+                        </div>
+                    </div>
             </div>
-            <div className="card__title">
-                {products.name}
-            </div>
-            <div className="card__rating">
-                <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
-                <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
-                <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
-                <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
-                <FontAwesomeIcon icon={faStar} className="card__rating--yellow"/>
-                <FontAwesomeIcon icon={faStar} className="card__rating--gray"/>
-            </div>
-            <div className="card__price">
-                <div className="card__price--discounted">
-                    {products.discountedPrice}
-                </div>
-                <div className="card__price--original">
-                    {products.original_price}
-                </div>
-            </div>
-        </div>
+
     
         
         )
 
     return(
-        <div>{newproducts}</div>
+        <>{newproducts}</>
     )
 
 }

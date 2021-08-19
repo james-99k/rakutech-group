@@ -21,8 +21,9 @@ const ProductList = () =>{
                 <a href="">Accessories</a>    
             </div>    
             <div className="container">
-
-            <LocalProducts/>
+                <div class="row">
+                    <LocalProducts/>
+                </div>
 
             </div>
 

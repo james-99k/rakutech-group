@@ -8,7 +8,7 @@ function Services(){
 
         <section className="services">
 
-            <div className="container">
+            <div className="serv-container">
                 <div className="details">
                     <div className="details__icon">
                         <FontAwesomeIcon icon={faTruck}/>

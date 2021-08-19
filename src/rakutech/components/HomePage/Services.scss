@@ -17,6 +17,17 @@ $details-title: #22262A;
     display: flex;
 }
 
+.serv-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 .details {
     flex-basis: 20%;
     display: flex;

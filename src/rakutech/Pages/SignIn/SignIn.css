@@ -248,12 +248,14 @@ body {
   color: white;
   margin-bottom: 15px;
   background-image: url(../../images/apple-64.png);
+  padding: 16px;
 }
 
 .form__side .form__container .sign__in--facebook {
   background-color: blue;
   color: white;
   background-image: url(../../images/fb-64.png);
+  padding: 16px;
 }
 
 .form__side .form__container .divider {
