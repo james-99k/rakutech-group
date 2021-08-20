@@ -189,4 +189,84 @@
   color: #B2002D;
   margin-left: 5px;
 }
+
+.sign__in--apple, .sign__in--facebook {
+  width: 327px;
+  height: 48px;
+  border-radius: 6px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 20% 40%;
+}
+
+.sign__in--apple {
+  background-color: black;
+  color: white;
+  margin-bottom: 15px;
+  background-image: url(../images/apple-64.png);
+  padding: 10px;
+}
+
+.sign__in--facebook {
+  background-color: blue;
+  color: white;
+  background-image: url(../images/fb-64.png);
+  padding: 10px;
+}
+
+.divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.divider hr {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 1px;
+  width: 100px;
+  background-color: #adabab;
+  border: 1px solid transparent;
+}
+
+.divider .h1 {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.divider .h2 {
+  margin-left: 10px;
+}
+
+.bar {
+  margin-top: 20px;
+}
+
+.sign__up {
+  margin-top: 10px;
+  width: 350px;
+  height: 48px;
+  background-color: #FD2E2E;
+  border-radius: 8px;
+  color: white;
+  border: 0;
+  padding: 5px;
+}
+
+.terms_agreement {
+  width: 196px;
+  height: 28px;
+  font-size: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=login.component.css.map */

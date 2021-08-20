@@ -13,6 +13,14 @@ import BoardUser from "./components/board-user.component";
 import BoardSeller from "./components/board-seller.component";
 import BoardAdmin from "./components/board-admin.component";
 
+//-------------------------------------------------------RAKUTECH PAGES
+import RakutechHome from "./Pages/HomePage/Home"
+import RakutechLogin from "./Pages/SignIn/SignIn"
+import RakutechSignUp from "./Pages/SignUp/SignUp"
+import RakutechStore from "./Pages/Store/Store"
+import RakutechProduct from "./Pages/Products/ProductPage"
+import RakutechCheckout from "./Pages/Checkout/Checkout"
+
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
 
@@ -140,7 +148,15 @@ class App extends Component {
 
           <div className="">
             <Switch>
-              <Route exact path={["/", "/home"]} component={Home} />
+              {/* RAKUTECH PAGES */}
+              <Route exact path={["/", "/home"]} component={RakutechHome} />
+              <Route exact path="/SignIn" component={RakutechLogin} />
+              <Route exact path="/SignUp" component={RakutechSignUp} />
+              <Route exact path="/Store" component={RakutechStore} /> 
+              <Route exact path="/Checkout" component={RakutechCheckout} /> 
+              <Route exact path="/Products" component={RakutechProduct} />
+
+              {/* <Route exact path={["/", "/home"]} component={Home} /> */}
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/profile" component={Profile} />

@@ -139,3 +139,81 @@
   }
   }
 }
+
+.sign__in{
+
+  &--apple, &--facebook{
+      width: 327px;
+      height: 48px;
+      border-radius: 6px;
+      border: 0;
+      background-repeat: no-repeat;
+      background-size: 22px;
+      background-position: 20% 40%;
+  }
+
+  &--apple{
+
+      background-color: black;
+      color: white;
+      margin-bottom: 15px;
+      background-image: url(../images/apple-64.png);
+      padding: 10px;
+  }
+
+  &--facebook{
+
+      background-color: blue;
+      color: white;   
+      background-image: url(../images/fb-64.png);
+      padding: 10px;
+
+  }
+
+}
+
+.divider{
+
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  width: 100%;
+  margin-top: 10px;
+
+  hr{
+
+      flex-basis: 50%;
+      height: 1px;
+      width: 100px;
+      background-color: rgb(173, 171, 171);
+      border: 1px solid transparent;
+
+  }
+  .h1{margin-right: 10px;
+  margin-left: 20px;}
+  .h2{margin-left: 10px;}
+
+}
+
+.bar{
+  margin-top: 20px;
+}
+
+.sign__up{
+  margin-top: 10px;
+  width: 350px;
+  height: 48px;
+  background-color: #FD2E2E;
+  border-radius: 8px;
+  color: white;
+  border: 0;
+  padding: 5px;
+}
+
+.terms_agreement{
+  width: 196px;
+  height: 28px;
+  font-size: 10px;
+  align-self: center;
+}
+

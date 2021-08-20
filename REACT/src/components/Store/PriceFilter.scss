@@ -1,0 +1,38 @@
+.price{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #F6F7F8;
+    width: 270px;
+
+    .filter__price{
+
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        h2{
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .slider__header{
+
+            display: flex;
+            font-weight: bolder;
+            width: 90%;
+            justify-content: space-between;
+
+        }
+
+        .slider{
+
+            width: 95%;
+
+        }
+
+    }
+
+}
+

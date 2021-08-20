@@ -1,0 +1,85 @@
+.featured_products{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 150px 0px;
+
+    .container{
+
+        margin-top: 50px;
+
+    }
+
+    
+$featured-title: #262626;
+$featured-price-red: #FF4858;
+$featured-price-gray: #C1C8CE;
+$star-yellow: #FFC600;
+$star-gray: #C1C8CE;
+
+.container {
+    display: flex;
+}
+
+.featured {
+    width: 400px;
+    height: 170px;
+    display: flex;
+
+    &__image {
+        width: 210px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px 10px 20px;
+
+        &--title {
+            font-family: 'Proxima Nova Rg';
+            color: $featured-title;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        &--rating {
+            margin-top: 10px;
+        }
+
+        &--price {
+            font-family: 'Proxima Nova Rg';
+            font-size: 16px;
+            margin-top: 10px;
+            display: flex;
+
+            &-discounted {
+                color: $featured-price-red;
+                margin-left: 10px;
+            }
+
+            &-orignal {
+                color: $featured-price-gray;
+                margin-left: 10px;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.card__rating{
+
+    &--yellow{
+        color: $star-yellow;
+    }
+
+    &--gray {
+        color: $star-gray;
+    }
+}
+
+}
