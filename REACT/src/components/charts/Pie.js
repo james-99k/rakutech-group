@@ -16,7 +16,7 @@ export default function CirclePie() {
             <PieChart width={250} height={200}>
                 <Pie
                     data={data}
-                    cx={150}
+                    cx={130}
                     cy={100}
                     innerRadius={60}
                     outerRadius={80}

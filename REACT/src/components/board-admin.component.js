@@ -61,7 +61,7 @@ export default class BoardAdmin extends Component {
               <Route path="/products">
                 <Product />
               </Route>
-              <Route path="/userManager">
+              <Route path="/users">
                 <UserManager />
               </Route>
             </Switch>
