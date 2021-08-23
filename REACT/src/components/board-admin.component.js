@@ -1,7 +1,15 @@
 import React, { Component } from "react";
+import './board-admin.component.scss'
 
 import UserService from "../services/user.service";
 import EventBus from "../common/EventBus";
+import Topbar from "./topbar/Topbar";
+import Sidebar from "./sidebar/Sidebar";
+import Home from "./admin-pages/Home";
+import Product from "./admin-pages/Product"
+import UserManager from "./admin-pages/UserManager"
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 export default class BoardAdmin extends Component {
   constructor(props) {
@@ -38,10 +46,27 @@ export default class BoardAdmin extends Component {
 
   render() {
     return (
-      <div className="container">
-        <header className="jumbotron">
+      <div className="adminPage">
+        {/* <header className="jumbotron">
           <h3>{this.state.content}</h3>
-        </header>
+        </header> */}
+        <Router>
+          <Topbar />
+          <div className="adminContainer">
+            <Sidebar />
+            <Switch>
+              <Route exact path="/admin">
+                <Home />
+              </Route>
+              <Route path="/products">
+                <Product />
+              </Route>
+              <Route path="/userManager">
+                <UserManager />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }

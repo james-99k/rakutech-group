@@ -74,18 +74,13 @@ class App extends Component {
         <div>
           <nav className="navbar navbar-expand navbar-dark bg-dark">
             <Link to={"/"} className="navbar-brand">
-              RAKUTECH
+              OnestopTech
             </Link>
             <div className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link to={"/home"} className="nav-link">
-                  Home
-                </Link>
-              </li>
-
+              
               {showSellerBoard && (
                 <li className="nav-item">
-                  <Link to={"/mod"} className="nav-link">
+                  <Link to={"/sell"} className="nav-link">
                     Seller Board
                   </Link>
                 </li>
