@@ -26,7 +26,7 @@ function Header() {
 
                 <div className="profile">    
                     <i><FontAwesomeIcon icon={faUser}/></i>
-                    <Link to={"/SignIn"}> My profile </Link>
+                    <Link to={"/login"}> My profile </Link>
                 </div>
                 <div className="basket">
                 <i><FontAwesomeIcon icon={faShoppingBasket}/></i>
@@ -46,7 +46,7 @@ function Header() {
         <section className="navigation_banner">
             <section className="logo">
 
-            <Link to={"/"}> <span className="rakuLink"><h1 className="first">RAKU</h1><h1 className="last">TECH</h1> </span></Link>
+            <Link to={"/"}> <span className="rakuLink"><h1 className="first">Onestop</h1><h1 className="last">Tech</h1> </span></Link>
 
             </section>
 

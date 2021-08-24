@@ -24,6 +24,10 @@
   border-radius: 6px;
 }
 
+.containerBox .containerLeft .companyLogo {
+  margin-top: 100px;
+}
+
 .containerBox .containerLeft .companyLogo a {
   text-decoration: none;
   color: #a83232;
@@ -36,6 +40,13 @@
   color: white;
 }
 
+.containerBox .containerLeft .bar {
+  margin: 0 0 15px 0;
+  width: 100px;
+  height: 10px;
+  background-color: #a83232;
+}
+
 .containerBox .containerRight {
   background: white;
   height: -webkit-fit-content;
@@ -45,6 +56,12 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 6px;
+}
+
+.containerBox .containerRight .registration {
+  margin-left: 10px;
+  padding-top: 30px;
+  font-size: 14px;
 }
 
 .containerBox .containerRight .title {
@@ -88,15 +105,17 @@
 }
 
 .containerBox .containerRight .loginBtn .green {
-  background: #4285F4;
+  background: black;
   color: white;
 }
 
 .containerBox .containerRight .loginBtn .green .logo {
   height: 50px;
   width: 50px;
-  background: white;
-  color: green;
+  background-image: url(../images/tes.png);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .containerBox .containerRight .loginBtn .blue {
@@ -108,6 +127,10 @@
   height: 50px;
   width: 50px;
   color: blue;
+  background-image: url(../images/fb-64.png);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .containerBox .containerRight .divider {
@@ -118,11 +141,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 20px;
+  margin-left: -60px;
 }
 
 .containerBox .containerRight .divider p {
+  background-color: black;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
 .containerBox .containerRight .input {
@@ -215,7 +240,7 @@
   padding: 10px;
 }
 
-.divider {
+.divide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,21 +253,21 @@
   margin-top: 10px;
 }
 
-.divider hr {
+.divide hr {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   height: 1px;
   width: 100px;
-  background-color: #adabab;
+  background-color: #f80909;
   border: 1px solid transparent;
 }
 
-.divider .h1 {
+.divide .h1 {
   margin-right: 10px;
   margin-left: 20px;
 }
 
-.divider .h2 {
+.divide .h2 {
   margin-left: 10px;
 }
 

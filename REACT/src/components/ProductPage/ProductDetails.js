@@ -12,7 +12,7 @@ import {faStar, faHeart} from '@fortawesome/free-solid-svg-icons'
 import React, {useState} from 'react';
 
 
-const Product = ({productData}) =>{
+const Product = ({productData}, {testMethodPass}) =>{
 
     //PRODUCT DISPLAYED 
     const TestProduct =[
@@ -118,10 +118,10 @@ const Product = ({productData}) =>{
                     <div className="options">
                         <Counter/>
                         <div className="buttons">
-                            <div className="buttons__cart">
+                            <button className="buttons__cart">
                                 <i className="fas fa-shopping-cart buttons__cart--icon"></i>
                                 Add To Cart
-                            </div>
+                            </button>
                             <div className="buttons__favorite">
                                 <FontAwesomeIcon icon={faHeart}/>
                             </div>

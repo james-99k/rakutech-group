@@ -3,6 +3,7 @@ $promo-text: #C1C8CE;
 .promo{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     .best-seller {
 
@@ -20,6 +21,11 @@ $promo-text: #C1C8CE;
         padding: 20px 0 60px 0;
         width: 90%;
 
+        &__image{
+            justify-self: center;
+            margin-left: 50px;
+        }
+
     }
 
     .catalogue_item{
@@ -27,7 +33,12 @@ $promo-text: #C1C8CE;
         margin-top: 50px;
         width: 85%;
         background-color: gray;
-        padding: 5px 0 50px 15px;
+        padding: 20px 0 50px 15px;
+        border-radius: 10px;
+
+        img{
+            margin-right: 20px;
+        }
 
     }
 }

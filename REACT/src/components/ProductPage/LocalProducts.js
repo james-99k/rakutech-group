@@ -11,6 +11,7 @@ import localThumb6 from '../../images/products/alu-silver-sport-white-s3-2up_gps
 import localThumb7 from '../../images/products/macbook-air-space-gray-config-201810.jpg'
 import localThumb8 from '../../images/products/MWP22.jpg'
 import { Col } from 'react-bootstrap';
+import RelatedProducts from './RelatedProducts';
 
 function LocalProducts(){
 
@@ -75,6 +76,7 @@ function LocalProducts(){
 
     const newproducts = localproducts.map(products => 
 
+            
             <div class="col-sm-3">
                     <div className="card">
                         <div className="card__image">
@@ -101,15 +103,12 @@ function LocalProducts(){
                         </div>
                     </div>
             </div>
-
-    
-        
         )
 
     return(
-        <>{newproducts}</>
+        
+        <>
+        {newproducts}</>
     )
-
 }
-
 export default LocalProducts;

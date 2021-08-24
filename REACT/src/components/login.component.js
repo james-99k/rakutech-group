@@ -83,188 +83,97 @@ class Login extends Component {
 
     return (
 
-      <section className="background">
+      
+      <div className="containerBox">
 
-    <div className="main_container">
-
-        <div className="non_form">
-
-            <div className="company_logo">
-            <Link to={"/"}><a className="home__link"><h1 className="first">RAKU</h1><h1>TECH</h1></a></Link>
-            </div>
-            <div className="bar"></div>
-            <p>Browse from over 500 devices in your area.</p>
-
+        <div className="containerLeft">
+          <div className="companyLogo">
+            <Link to={"/"}><a><h1 className="white">Onestop</h1><h1>Tech</h1></a></Link>
+          </div>
+          <div className="bar"></div>
+          <p>Browse from over 500 devices in your area.</p>
         </div>
 
-        <div className="form__side">
-            <div className="form__container">
-                <div className="form__container--inside">
-                <div className="header_container">
-                    <h1>Sign In</h1>
-                </div>
-                <input type="submit" className="sign__in--apple" value="SIGN IN WITH APPLE" />
-                <input type="submit" className="sign__in--facebook" value="SIGN IN WITH FACEBOOK" />
+        <div className="containerRight">
+          <div className="title">
+            <h1>Sign In</h1>
+          </div>
+          <div className="loginBtn">
+            <button className="login green">
+              <div className="logo">
                 
-                    <div className="divider">
-                    <hr className="h1"></hr> OR <hr className="h2"></hr>
-                    </div> 
-
-                <div className="form_side"></div>    
-                            <Form
-                    onSubmit={this.handleLogin}
-                    ref={(c) => {
-                      this.form = c;
-                    }}
-                  >
-                    <div className="input">
-                      <label htmlFor="username">Username</label>
-                      <Input
-                        type="text"
-                        className="form-control"
-                        name="username"
-                        value={this.state.username}
-                        onChange={this.onChangeUsername}
-                        validations={[required]}
-                      />
-                    </div>
-
-                    <div className="input">
-                      <label htmlFor="password">Password</label>
-                      <Input
-                        type="password"
-                        className="form-control"
-                        name="password"
-                        value={this.state.password}
-                        onChange={this.onChangePassword}
-                        validations={[required]}
-                      />
-                    </div>
-
-                    <div className="signIn">
-                      <button
-                        className="sign__up"
-                        disabled={this.state.loading}
-                      >
-                        {this.state.loading && (
-                          <span className="spinner-border spinner-border-sm"></span>
-                        )}
-                        <span>Sign In</span>
-                      </button>
-                    </div>
-                    <p className="terms_agreement">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>
-
-                    <p className="registration">Don't have an account? <Link to={"register"}><a >Create new account</a></Link></p>
-
-                    {message && (
-                      <div className="form-group">
-                        <div className="alert alert-danger" role="alert">
-                          {message}
-                        </div>
-                      </div>
-                    )}
-                    <CheckButton
-                      style={{ display: "none" }}
-                      ref={(c) => {
-                        this.checkBtn = c;
-                      }}
-                    />
-                  </Form>
+              </div>Sign in with Google
+            </button>
+            <button className="login blue">
+              <div className="logo">
+                
+              </div>Continue with Facebook</button>
+          </div>
+          <div className="divider">
+            <p></p>
+          </div>
+          <Form
+            onSubmit={this.handleLogin}
+            ref={(c) => {
+              this.form = c;
+            }}
+          >
+            <div className="input">
+              <label htmlFor="username">Username</label>
+              <Input
+                type="text"
+                className="form-control"
+                name="username"
+                value={this.state.username}
+                onChange={this.onChangeUsername}
+                validations={[required]}
+              />
             </div>
+
+            <div className="input">
+              <label htmlFor="password">Password</label>
+              <Input
+                type="password"
+                className="form-control"
+                name="password"
+                value={this.state.password}
+                onChange={this.onChangePassword}
+                validations={[required]}
+              />
             </div>
+
+            <div className="signIn">
+              <button
+                className="signInBtn"
+                disabled={this.state.loading}
+              >
+                {this.state.loading && (
+                  <span className="spinner-border spinner-border-sm"></span>
+                )}
+                <span>Sign In</span>
+              </button>
+            </div>
+            <p className="terms_agreement">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>
+
+            <p className="registration">Don't have an account? <Link to={"register"}><a >Create new account</a></Link></p>
+
+            {message && (
+              <div className="form-group">
+                <div className="alert alert-danger" role="alert">
+                  {message}
+                </div>
+              </div>
+            )}
+            <CheckButton
+              style={{ display: "none" }}
+              ref={(c) => {
+                this.checkBtn = c;
+              }}
+            />
+          </Form>
         </div>
-    </div>
+      </div>
 
-</section>
-
-  //     <div className="containerBox">
-
-  //       <div className="containerLeft">
-  //         <div className="companyLogo">
-  //           <Link to={"/"}><a><h1 className="white">RAKU</h1><h1>TECH</h1></a></Link>
-  //         </div>
-  //         <p>Browse from over 500 devices in your area.</p>
-  //       </div>
-
-  //       <div className="containerRight">
-  //         <div className="title">
-  //           <h1>Sign In</h1>
-  //         </div>
-  //         <div className="loginBtn">
-  //           <button className="login green">
-  //             <div className="logo">
-  //               <h1>G</h1>
-  //             </div>Sign in with Google
-  //           </button>
-  //           <button className="login blue">
-  //             <div className="logo">
-  //               <h1>F</h1>
-  //             </div>Continue with Facebook</button>
-  //         </div>
-  //         <div className="divider">
-  //           <p></p>
-  //         </div>
-  //         <Form
-  //           onSubmit={this.handleLogin}
-  //           ref={(c) => {
-  //             this.form = c;
-  //           }}
-  //         >
-  //           <div className="input">
-  //             <label htmlFor="username">Username</label>
-  //             <Input
-  //               type="text"
-  //               className="form-control"
-  //               name="username"
-  //               value={this.state.username}
-  //               onChange={this.onChangeUsername}
-  //               validations={[required]}
-  //             />
-  //           </div>
-
-  //           <div className="input">
-  //             <label htmlFor="password">Password</label>
-  //             <Input
-  //               type="password"
-  //               className="form-control"
-  //               name="password"
-  //               value={this.state.password}
-  //               onChange={this.onChangePassword}
-  //               validations={[required]}
-  //             />
-  //           </div>
-
-  //           <div className="signIn">
-  //             <button
-  //               className="signInBtn"
-  //               disabled={this.state.loading}
-  //             >
-  //               {this.state.loading && (
-  //                 <span className="spinner-border spinner-border-sm"></span>
-  //               )}
-  //               <span>Sign In</span>
-  //             </button>
-  //           </div>
-  //           <p className="terms_agreement">By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>
-
-  //           <p className="registration">Don't have an account? <Link to={"register"}><a >Create new account</a></Link></p>
-
-  //           {message && (
-  //             <div className="form-group">
-  //               <div className="alert alert-danger" role="alert">
-  //                 {message}
-  //               </div>
-  //             </div>
-  //           )}
-  //           <CheckButton
-  //             style={{ display: "none" }}
-  //             ref={(c) => {
-  //               this.checkBtn = c;
-  //             }}
-  //           />
-  //         </Form>
-  //       </div>
-  //     </div>
     );
    }
 }

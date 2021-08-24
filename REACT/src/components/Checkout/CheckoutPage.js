@@ -1,15 +1,18 @@
+import React, { useState } from "react"
 import './Checkout.scss'
 import Counter from '../../components/ProductPage/Counter.js'
 import Header from '../HomePage/Header';
 import Footer from '../HomePage/Footer';
 
-function CheckoutPage(){
+const CheckoutPage = cartItems => {
 
     return(
 
         <>
         <Header/>
         <div className="checkout">
+            
+            {cartItems.length === 0 && <div>No items are added</div>}
             
             <div className="checkout__header">
 

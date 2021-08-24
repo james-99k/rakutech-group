@@ -20,6 +20,9 @@ import RakutechSignUp from "./Pages/SignUp/SignUp"
 import RakutechStore from "./Pages/Store/Store"
 import RakutechProduct from "./Pages/Products/ProductPage"
 import RakutechCheckout from "./Pages/Checkout/Checkout"
+import LocalProducts from "./components/ProductPage/LocalProducts";
+
+import { useState } from "react";
 
 import { logout } from "./actions/auth";
 import { clearMessage } from "./actions/message";
@@ -28,8 +31,10 @@ import { history } from './helpers/history';
 
 // import AuthVerify from "./common/auth-verify";
 import EventBus from "./common/EventBus";
+import Product from "./components/ProductPage/ProductDetails";
 
 class App extends Component {
+
   constructor(props) {
     super(props);
     this.logOut = this.logOut.bind(this);
@@ -40,10 +45,34 @@ class App extends Component {
       currentUser: undefined,
     };
 
+
+    this.state={
+      cartItems: []
+    }
+
     history.listen((location) => {
       props.dispatch(clearMessage()); // clear message when changing location
     });
+    
   }
+
+  // _testCartItem = () => () => {
+  //   const [cartItem, setCartItem] = useState(0);
+  // }
+
+  // handleAddProduct = (products) =>{
+
+  //   const ProductExist = this.cartItem.find((item) => item.id === products.id);
+  //   console.log(ProductExist);
+  //   if(ProductExist){
+  //     this.newCartItem(
+  //       this.cartItem.mapStateToProps((item) =>
+  //       item.id === products.id 
+  //       ? {...ProductExist, quantity: ProductExist.quantity + 1}
+  //       : item)
+  //     )
+  //   }
+  // }
 
   componentDidMount() {
     const user = this.props.user;
@@ -73,14 +102,13 @@ class App extends Component {
       currentUser: undefined,
     });
   }
-
   render() {
-    const { currentUser, showSellerBoard, showAdminBoard } = this.state;
+    const { currentUser, showSellerBoard, showAdminBoard, cartItems} = this.state;
 
     return (
       <Router history={history}>
         <div>
-          <nav className="navbar navbar-expand navbar-dark bg-dark">
+          {/* <nav className="navbar navbar-expand navbar-dark bg-dark">
             <Link to={"/"} className="navbar-brand">
               RAKUTECH
             </Link>
@@ -144,16 +172,14 @@ class App extends Component {
                 </li>
               </div>
             )}
-          </nav>
-
-          <div className="">
+          </nav> */}
+                    <div className="">
             <Switch>
               {/* RAKUTECH PAGES */}
               <Route exact path={["/", "/home"]} component={RakutechHome} />
-              <Route exact path="/SignIn" component={RakutechLogin} />
-              <Route exact path="/SignUp" component={RakutechSignUp} />
+
               <Route exact path="/Store" component={RakutechStore} /> 
-              <Route exact path="/Checkout" component={RakutechCheckout} /> 
+              <Route exact path="/Checkout" component={RakutechCheckout} cartItems={cartItems}/>
               <Route exact path="/Products" component={RakutechProduct} />
 
               {/* <Route exact path={["/", "/home"]} component={Home} /> */}
@@ -165,6 +191,8 @@ class App extends Component {
               <Route path="/admin" component={BoardAdmin} />
             </Switch>
           </div>
+
+
 
           {/* <AuthVerify logOut={this.logOut}/> */}
         </div>

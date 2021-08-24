@@ -116,13 +116,15 @@ class Register extends Component {
     return (
       <div className="containerBox">
 
+
         <div className="containerLeft">
           <div className="companyLogo">
-            <Link to={"/"}><a><h1 className="white">RAKU</h1><h1>TECH</h1></a></Link>
+            <Link to={"/"}><a><h1 className="white">Onestop</h1><h1>Tech</h1></a></Link>
           </div>
+          <div className="bar"></div>
           <p>Browse from over 500 devices in your area.</p>
         </div>
-
+        
         <div className="containerRight">
           <div className="title">
             <h1>Sign Up</h1>

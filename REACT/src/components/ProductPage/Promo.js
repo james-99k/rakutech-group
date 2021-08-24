@@ -11,7 +11,7 @@ function Promo(){
 
         <div className="promo">
             <h3 className="best-seller">BEST SELLER</h3>
-            <Cards original_price="$599" discounted_price="$499" prod_name="Apple MacBook Pro" style={{height: 100}}/>
+            <Cards original_price="$599" discounted_price="$499" prod_name="Apple MacBook Pro" style={{height: 100}} className="promo__card"/>
             <ProductThree/>
         </div>
 

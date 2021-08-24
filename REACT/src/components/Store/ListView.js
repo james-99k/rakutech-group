@@ -1,5 +1,6 @@
 import './ListView.scss';
 import React, { useState, useEffect } from 'react';
+import LocalProducts from '../ProductPage/LocalProducts';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faStar, faHeart, faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 
@@ -22,6 +23,11 @@ function ListView(){
     return(
 
         <div className="list__view">
+{/* 
+            <div className="list__view">
+            <LocalProducts/>
+            </div> */}
+
             {data.map((item)=>{
                 return <div className="container" key={item.id}>
 
@@ -73,7 +79,7 @@ function ListView(){
 
                 </div>
             </div>
-        })}    
+            })}     
         </div> 
 
     );

@@ -129,21 +129,23 @@ body {
   text-decoration: none;
 }
 
-.navigation_banner .logo .logoLink {
+.navigation_banner .logo .rakuLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .navigation_banner .logo .first {
+  font-weight: bold;
   color: #2E2E2E;
 }
 
 .navigation_banner .logo .last {
+  font-weight: bold;
   color: #FD2E2E;
 }
 
-.navigation_banner .navigation_bar {
+.navigation_banner .navigationBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +157,7 @@ body {
   padding: 0px 0 40px 0px;
 }
 
-.navigation_banner .navigation_bar ul {
+.navigation_banner .navigationBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +168,7 @@ body {
   list-style-type: none;
 }
 
-.navigation_banner .navigation_bar ul a {
+.navigation_banner .navigationBar ul a {
   text-decoration: none;
   margin: 0px 40px 0 40px;
   font-weight: semibold;
@@ -174,7 +176,7 @@ body {
   font-weight: bolder;
 }
 
-.navigation_banner .navigation_bar ul a:hover {
+.navigation_banner .navigationBar ul a:hover {
   color: #33A0FF;
 }
 
@@ -271,7 +273,7 @@ li.dropdown {
   display: inline-block;
 }
 
-.dropdown_content {
+.dropdownContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,17 +292,17 @@ li.dropdown {
   width: 1000px;
 }
 
-.dropdown_content .content_container h2 {
+.dropdownContent .contentContainer h2 {
   padding-left: 45px;
   color: #C1C8CE;
   font-size: 18px;
 }
 
-.dropdown_content .content_container a {
+.dropdownContent .contentContainer a {
   font-size: 14px;
 }
 
-.dropdown_content .dropdown_container {
+.dropdownContent .dropdownContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +312,7 @@ li.dropdown {
           flex-direction: row;
 }
 
-.dropdown_content a {
+.dropdownContent a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,7 +324,7 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown:hover .dropdown_content {
+.dropdown:hover .dropdownContent {
   display: block;
 }
 
