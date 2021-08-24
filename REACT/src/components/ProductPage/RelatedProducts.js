@@ -11,7 +11,10 @@ function RelatedProducts(){
         
             <h4>RELATED PRODUCTS</h4>
             <div className="product_container">
-                <LocalProducts/>
+                <Cards className="relatedcards"/>
+                <Cards className="relatedcards"/>
+                <Cards className="relatedcards"/>
+                <Cards className="relatedcards"/>
             </div>
         </div>
 

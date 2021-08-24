@@ -15,7 +15,7 @@ const Products = ({products}) =>{
             <Header/>
             <SubNav />
 
-            <div className="products product_details">
+            <div className="products">
 
                 <ProductDetails />
 
@@ -24,7 +24,7 @@ const Products = ({products}) =>{
                 <Promo />
             </div>
             </div>
-            <RelatedProducts/>
+            <RelatedProducts products={products}/>
             <Footer/>
         </div>
 

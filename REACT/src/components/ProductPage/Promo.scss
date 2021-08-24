@@ -4,11 +4,11 @@ $promo-text: #C1C8CE;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 
     .best-seller {
 
         margin-top: 50px;
-        margin-bottom: 30px;
         font-family: 'Proxima Nova Rg';
         font-size: 18px;
         font-weight: bold;
@@ -23,7 +23,7 @@ $promo-text: #C1C8CE;
 
         &__image{
             justify-self: center;
-            margin-left: 50px;
+            margin-left: 60px;
         }
 
     }
@@ -33,7 +33,7 @@ $promo-text: #C1C8CE;
         margin-top: 50px;
         width: 85%;
         background-color: gray;
-        padding: 20px 0 50px 15px;
+        padding: 20px 0 50px 25px;
         border-radius: 10px;
 
         img{

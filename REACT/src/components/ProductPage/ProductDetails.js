@@ -7,9 +7,11 @@ import productThumbnail4 from '../../images/151101_bbd_sodc_blk_06.png';
 import productImagePink from '../../images/beats__1.png';
 import productImageRed from '../../images/beat-red.png';
 import Counter from './Counter.js'
+import Checkout from '../../Pages/Checkout/Checkout';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faStar, faHeart} from '@fortawesome/free-solid-svg-icons'
 import React, {useState} from 'react';
+import data from './Data';
 
 
 const Product = ({productData}, {testMethodPass}) =>{
@@ -24,16 +26,6 @@ const Product = ({productData}, {testMethodPass}) =>{
         productImage: productImagePink
     },
 ]
-
-
-    let productName = "Beats Solo2 On Ear Headphones - Black";
-    let productPrice = "$599";
-    let productDiscounted = "$499";
-
-    const [prodName, setName] = useState(productName);
-    const [prodDiscount, setDiscount] = useState(productDiscounted);
-    const [prodPrice, setPrice] = useState(productPrice);
-    const [prodImg, setImg] = useState(productImage);
 
     const ProxyProduct = TestProduct.map(products =>
 

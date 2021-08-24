@@ -12,8 +12,6 @@ const CheckoutPage = cartItems => {
         <Header/>
         <div className="checkout">
             
-            {cartItems.length === 0 && <div>No items are added</div>}
-            
             <div className="checkout__header">
 
                 <div className="checkout__header-product">
@@ -32,6 +30,18 @@ const CheckoutPage = cartItems => {
             </div>
 
             <div className="checkout__item">
+                
+            { cartItems.length === 0 && (
+                <div className="cart-items-empty">No items are added</div>
+            )}
+{/* 
+            <div>
+                {cartItems.map((item) => (
+                    <div key={item.id} className="cart-item">
+                        <img src={item.img} alt={item.name}/>
+                    </div>
+                ))}
+            </div> */}
 
                 <div className="checkout__item-remove">
                     X

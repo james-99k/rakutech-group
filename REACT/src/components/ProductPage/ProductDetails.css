@@ -400,6 +400,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 1px solid transparent;
 }
 
 .product__details .buttons__cart--icon {

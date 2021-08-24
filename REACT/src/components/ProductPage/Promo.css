@@ -9,11 +9,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
 }
 
 .promo .best-seller {
   margin-top: 50px;
-  margin-bottom: 30px;
   font-family: 'Proxima Nova Rg';
   font-size: 18px;
   font-weight: bold;
@@ -28,14 +28,14 @@
 .promo .card__image {
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .promo .catalogue_item {
   margin-top: 50px;
   width: 85%;
   background-color: gray;
-  padding: 20px 0 50px 15px;
+  padding: 20px 0 50px 25px;
   border-radius: 10px;
 }
 

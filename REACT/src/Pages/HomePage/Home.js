@@ -9,15 +9,22 @@ import FeaturedProducts from '../../components/HomePage/FeaturedProducts/Feature
 import PageSearch from '../../components/HomePage/PageSearch.js'
 import Header from '../../components/HomePage/Header.js'
 import Footer from '../../components/HomePage/Footer.js'
+import data from '../../components/ProductPage/Data'
+import { useState } from 'react'
+import relatedproducts from '../../components/ProductPage/Data'
 
 function Home(){
+
+    const {relatedproduct} = data;
+    const [cartItems, setCartItems] = useState([]);
+
 
     return(
 
         <div>
             <Header/>      
             <Banner/>
-            <Products />
+            <Products/>
             <ProductList />
             <ProductBannerSub name="iPhone 6"/>
             <Services/>

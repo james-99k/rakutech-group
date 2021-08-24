@@ -45,11 +45,6 @@ class App extends Component {
       currentUser: undefined,
     };
 
-
-    this.state={
-      cartItems: []
-    }
-
     history.listen((location) => {
       props.dispatch(clearMessage()); // clear message when changing location
     });
@@ -103,7 +98,7 @@ class App extends Component {
     });
   }
   render() {
-    const { currentUser, showSellerBoard, showAdminBoard, cartItems} = this.state;
+    const { currentUser, showSellerBoard, showAdminBoard} = this.state;
 
     return (
       <Router history={history}>
@@ -173,13 +168,13 @@ class App extends Component {
               </div>
             )}
           </nav> */}
-                    <div className="">
+          <div className="">
             <Switch>
               {/* RAKUTECH PAGES */}
               <Route exact path={["/", "/home"]} component={RakutechHome} />
 
               <Route exact path="/Store" component={RakutechStore} /> 
-              <Route exact path="/Checkout" component={RakutechCheckout} cartItems={cartItems}/>
+              <Route exact path="/Checkout" component={RakutechCheckout}/>
               <Route exact path="/Products" component={RakutechProduct} />
 
               {/* <Route exact path={["/", "/home"]} component={Home} /> */}

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../HomePage/ProductCards.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faStar} from '@fortawesome/free-solid-svg-icons'
@@ -10,13 +9,11 @@ import localThumb5 from '../../images/products/ipad-2020-hero-landing.jpg'
 import localThumb6 from '../../images/products/alu-silver-sport-white-s3-2up_gps_varend.png'
 import localThumb7 from '../../images/products/macbook-air-space-gray-config-201810.jpg'
 import localThumb8 from '../../images/products/MWP22.jpg'
-import { Col } from 'react-bootstrap';
-import RelatedProducts from './RelatedProducts';
-import Checkout from '../../Pages/Checkout/Checkout';
 
-function LocalProducts(){
+function TestProduct(){
 
-    const localproducts = [
+    
+    const relatedproducts = [
         {
             id: 1,
             name: 'AirPods Max',
@@ -38,47 +35,13 @@ function LocalProducts(){
             discountedPrice: '$499',
             productImage: localThumb3
         },
-        {
-            id: 4,
-            name: 'Magic Keyboard for iPad Pro 11-inch',
-            originalPrice: '$359',
-            discountedPrice: '$299',
-            productImage: localThumb4
-        },
-        {
-            id: 5,
-            name: 'iPad (8th Generation)',
-            originalPrice: '$1099',
-            discountedPrice: '$829',
-            productImage: localThumb5
-        },
-        {
-            id: 6,
-            name: 'Apple Watch',
-            originalPrice: '$499',
-            discountedPrice: '$399',
-            productImage: localThumb6
-        },
-        {
-            id: 7,
-            name: 'Apple Macbook Air',
-            originalPrice: '$529',
-            discountedPrice: '$415',
-            productImage: localThumb7
-        },
-        {
-            id: 8,
-            name: 'Air Pods Pro',
-            originalPrice: '$599',
-            discountedPrice: '$459',
-            productImage: localThumb8
-        },
+        
     ] 
 
-    const newproducts = localproducts.map(products => 
+    const newproducts = relatedproducts.map(products => 
 
             
-            <div class="col-sm-3">
+        <div class="col-sm-3">
                 <div className="card">
                     <div className="card__image">
                         <img src={products.productImage} alt="" className="card__image--pic"/>
@@ -103,11 +66,15 @@ function LocalProducts(){
                         </div>
                     </div>
                 </div>
-            </div>
-        )
-
-    return( 
-        <>{newproducts}</>
+        </div>
     )
+
+return(
+    
+    <>
+    {newproducts}</>
+)
+
 }
-export default LocalProducts;
+
+export default TestProduct;
