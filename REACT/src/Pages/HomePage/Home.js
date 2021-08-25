@@ -1,4 +1,3 @@
-
 import Banner from '../../components/HomePage/Banner.js'
 import Products from '../../components/HomePage/ProductsCatalogue.js'
 import ProductList from '../../components/HomePage/ProductList.js'

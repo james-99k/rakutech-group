@@ -1,0 +1,30 @@
+.productList {
+    flex: 3;
+    height: 550px;
+    margin: 10px;
+    background: white;
+    border-radius: 6px;
+
+    .tab {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .box {
+            padding: 10px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        button {
+            border: none;
+            border-radius: 6px;
+            background: #a83232;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}

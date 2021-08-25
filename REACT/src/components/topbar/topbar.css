@@ -1,0 +1,87 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbar__wrapper {
+  height: 100%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar__wrapper--left .link {
+  text-decoration: none;
+}
+
+.topbar__wrapper--left .link .logo {
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+.topbar__wrapper--left .link .logo .red {
+  color: red;
+}
+
+.topbar__wrapper--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar__wrapper--right .iconContainer {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar__wrapper--right .iconContainer__badge {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=topbar.css.map */

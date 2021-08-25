@@ -1,4 +1,3 @@
-
 import localThumb1 from '../../images/products/airpods-max-hero-select-202011.jpg'
 import localThumb2 from '../../images/products/iphone11-red-select-2019.png'
 import localThumb3 from '../../images/products/50061505_575246.png'

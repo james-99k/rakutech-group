@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Router, Switch, Route, Link } from "react-router-dom";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Login from "./components/login.component";
@@ -12,6 +11,9 @@ import Profile from "./components/profile.component";
 import BoardUser from "./components/board-user.component";
 import BoardSeller from "./components/board-seller.component";
 import BoardAdmin from "./components/board-admin.component";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingBasket, faUser } from '@fortawesome/free-solid-svg-icons'
 
 //-------------------------------------------------------RAKUTECH PAGES
 import RakutechHome from "./Pages/HomePage/Home"
@@ -45,10 +47,15 @@ class App extends Component {
       currentUser: undefined,
     };
 
+
+    this.state = {
+      cartItems: []
+    }
+
     history.listen((location) => {
       props.dispatch(clearMessage()); // clear message when changing location
     });
-    
+
   }
 
   // _testCartItem = () => () => {
@@ -98,21 +105,21 @@ class App extends Component {
     });
   }
   render() {
-    const { currentUser, showSellerBoard, showAdminBoard} = this.state;
+    const { currentUser, showSellerBoard, showAdminBoard, cartItems } = this.state;
 
     return (
       <Router history={history}>
         <div>
-          {/* <nav className="navbar navbar-expand navbar-dark bg-dark">
-            <Link to={"/"} className="navbar-brand">
+          <nav className="navbar">
+            {/* <Link to={"/"} className="navbar-brand">
               RAKUTECH
-            </Link>
-            <div className="navbar-nav mr-auto">
-              <li className="nav-item">
+            </Link> */}
+            <div className="navAuth">
+              {/* <li className="nav-item">
                 <Link to={"/home"} className="nav-link">
                   Home
                 </Link>
-              </li>
+              </li> */}
 
               {showSellerBoard && (
                 <li className="nav-item">
@@ -130,19 +137,20 @@ class App extends Component {
                 </li>
               )}
 
-              {currentUser && (
+              {/* {currentUser && (
                 <li className="nav-item">
                   <Link to={"/user"} className="nav-link">
                     User
                   </Link>
                 </li>
-              )}
+              )} */}
             </div>
 
             {currentUser ? (
-              <div className="navbar-nav ml-auto">
+              <div className="navProfile">
                 <li className="nav-item">
                   <Link to={"/profile"} className="nav-link">
+                    <i><FontAwesomeIcon icon={faUser}/></i>
                     {currentUser.username}
                   </Link>
                 </li>
@@ -151,30 +159,37 @@ class App extends Component {
                     LogOut
                   </a>
                 </li>
+                <li className="nav-item item">
+                  <Link to={"/Checkout"} className="nav-link">
+                    <i><FontAwesomeIcon icon={faShoppingBasket} /></i>
+                    Items
+                    <div className="cost">$0.00</div>
+                  </Link>
+                </li>
               </div>
             ) : (
-              <div className="navbar-nav ml-auto">
+              <div className="navProfile">
                 <li className="nav-item">
                   <Link to={"/login"} className="nav-link">
-                    Login
+                    My Profile
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link to={"/register"} className="nav-link">
                     Sign Up
                   </Link>
-                </li>
+                </li> */}
               </div>
             )}
-          </nav> */}
+          </nav>
           <div className="">
             <Switch>
               {/* RAKUTECH PAGES */}
               <Route exact path={["/", "/home"]} component={RakutechHome} />
 
-              <Route exact path="/Store" component={RakutechStore} /> 
-              <Route exact path="/Checkout" component={RakutechCheckout}/>
+              <Route exact path="/Store" component={RakutechStore} />
+              <Route exact path="/Checkout" component={RakutechCheckout} cartItems={cartItems} />
               <Route exact path="/Products" component={RakutechProduct} />
 
               {/* <Route exact path={["/", "/home"]} component={Home} /> */}

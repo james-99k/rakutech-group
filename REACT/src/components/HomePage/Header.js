@@ -8,7 +8,7 @@ import SignIn from '../../Pages/SignIn/SignIn.js';
 function Header() {
   return (
     <div className="App">
-        <header className="header">
+        {/* <header className="header">
 
             <div className="language_switcher">
 
@@ -41,7 +41,7 @@ function Header() {
 
             </div>
 
-        </header>
+        </header> */}
 
         <section className="navigation_banner">
             <section className="logo">
