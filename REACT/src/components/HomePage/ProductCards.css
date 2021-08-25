@@ -1,0 +1,103 @@
+.container .card {
+  border: 1px solid #f3eeee;
+  height: 320px;
+  width: 270px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card__image {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container .card__image--container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container .card__image--pic {
+  width: 150px;
+  height: 150px;
+}
+
+.container .card__image:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.container .card__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  color: #262626;
+  font-family: "Proxima Nova Rg";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.container .card__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  height: 10px;
+}
+
+.container .card__rating--yellow {
+  color: #ECD345;
+}
+
+.container .card__rating--gray {
+  color: #BDBDBD;
+}
+
+.container .card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+}
+
+.container .card__price--discounted {
+  color: #FD2E2E;
+}
+
+.container .card__price--original {
+  margin-left: 15px;
+  color: #E5E5E5;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=ProductCards.css.map */

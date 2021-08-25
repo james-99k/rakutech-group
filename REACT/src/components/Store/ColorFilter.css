@@ -1,0 +1,68 @@
+.filter__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  background-color: #F6F7F8;
+  width: 270px;
+  margin-top: 20px;
+}
+
+.filter__color h2 {
+  font-size: 23px;
+  font-weight: bolder;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.filter__color .category__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter__color .category__color .blue {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #006CFF;
+}
+
+.filter__color .category__color .red {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FC3E39;
+}
+
+.filter__color .category__color .black {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.filter__color .category__color .yellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFF600;
+}
+
+.filter__color .category__color .pink {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF00B4;
+}
+/*# sourceMappingURL=ColorFilter.css.map */

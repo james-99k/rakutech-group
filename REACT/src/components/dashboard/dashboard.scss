@@ -1,0 +1,119 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__top {
+        display: flex;
+        gap: 10px;
+
+        .statistics {
+            height: 290px;
+            width: 650px;
+            background: white;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid grey;
+                font-weight: bold;
+            }
+
+            &__tab {
+                display: flex;
+                padding: 10px;
+
+                .tab {
+                    padding: 0 5px;
+                    margin: 0 3px;
+                    cursor: pointer;
+
+                    &.active, &:hover {
+                        background: rgb(70, 69, 69);
+                        color: white;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+
+        .calendar {
+            height: 290px;
+            width: 250px;
+            background: white;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid grey;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        gap: 10px;
+
+        .traffic {
+            height: 250px;
+            width: 285px;
+            background: white;
+            border-radius: 6px;
+            flex-direction: column;
+            padding: 0 20px;
+
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid grey;
+                font-weight: bold;
+            }
+        }
+
+        .tickets {
+            height: 250px;
+            width: 285px;
+            background: white;
+            border-radius: 6px;
+            flex-direction: column;
+            padding: 0 20px;
+
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid grey;
+                font-weight: bold;
+            }
+        }
+
+        .sources {
+            height: 250px;
+            width: 280px;
+            background: white;
+            border-radius: 6px;
+            flex-direction: column;
+            padding: 0 20px;
+
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid grey;
+                font-weight: bold;
+            }
+        }
+    }
+}

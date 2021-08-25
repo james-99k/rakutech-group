@@ -1,0 +1,62 @@
+.services{
+
+    background-color: #FFFFFF;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    z-index: 10;
+
+    $logo: #FF6875;
+$details-title: #22262A;
+
+.container {
+    display: flex;
+}
+
+.serv-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.details {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        height: 50px;
+        width: 50px;
+        color: $logo;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: bold;
+        color: $details-title;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-family: 'Proxima Nova Rg';
+        color: $details-title;
+        padding: 0 20px 0 20px;
+    }
+}
+
+}
+

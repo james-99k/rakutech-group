@@ -1,0 +1,150 @@
+.containerBox {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(172, 172, 172, 0.52)), to(rgba(0, 0, 0, 0.93))), url("../images/domenico-loia-hGV2TfOh0ns-unsplash@2x.png");
+  background-image: linear-gradient(to bottom, rgba(172, 172, 172, 0.52), rgba(0, 0, 0, 0.93)), url("../images/domenico-loia-hGV2TfOh0ns-unsplash@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerBox .containerLeft {
+  height: 300px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.containerBox .containerLeft .companyLogo a {
+  text-decoration: none;
+  color: #a83232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerBox .containerLeft .companyLogo a .white {
+  color: white;
+}
+
+.containerBox .containerRight {
+  background: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.containerBox .containerRight .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerBox .containerRight .title .logIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerBox .containerRight .title .logIn p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.containerBox .containerRight .title .logIn a {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 5px;
+  text-decoration: none;
+  color: #FD2E2E;
+}
+
+.containerBox .containerRight .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 20px;
+}
+
+.containerBox .containerRight .signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerBox .containerRight .signUp .signUpBtn {
+  border-radius: 6px;
+  border: none;
+  width: auto;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 40px;
+  color: white;
+  background: #FD2E2E;
+}
+
+.containerBox .containerRight p {
+  margin: 20px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 80px;
+}
+
+.form-control {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=register.component.css.map */

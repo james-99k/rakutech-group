@@ -1,0 +1,187 @@
+.list__view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  margin-left: 20px;
+  justify-items: flex-start;
+}
+
+.list__view .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ebf0f3;
+  border-radius: 10px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  padding: 50px 0 50px 40px;
+  margin-top: 20px;
+}
+
+.list__view .container .image__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #F6F7F8;
+  border-radius: 4px;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+}
+
+.list__view .container .image__container img {
+  height: 270px;
+  width: 270px;
+}
+
+.list__view .container .detail__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 80px;
+}
+
+.list__view .container .detail__container .review__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dadada;
+}
+
+.list__view .container .detail__container .review__container .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+
+.list__view .container .detail__container .review__container .stars .yellow {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  color: yellow;
+}
+
+.list__view .container .detail__container .review__container .stars .gray {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  color: gray;
+}
+
+.list__view .container .detail__container .review__container .review__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #C1C8CE;
+}
+
+.list__view .container .detail__container .review__container .review__number p {
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.list__view .container .detail__container .review__container .review__number input {
+  font-size: 16px;
+  border: 1px solid transparent;
+  height: 15px;
+  width: 15px;
+}
+
+.list__view .container .detail__container .review__container button {
+  margin-top: -5px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  height: 23px;
+  color: #33A0FF;
+}
+
+.list__view .container .price__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+}
+
+.list__view .container .price__container .discounted {
+  color: #FF4858;
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.list__view .container .price__container .original {
+  color: #C1C8CE;
+  font-size: 24px;
+  text-decoration: line-through;
+}
+
+.list__view .container .product__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-left: -3px;
+}
+
+.list__view .container .product__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.list__view .container .product__buttons button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #c3e3ff;
+  color: #33A0FF;
+  margin-right: 10px;
+  height: 46px;
+  padding: 15px;
+}
+
+.list__view .container .product__buttons button i {
+  color: #33a0ffbd;
+}
+
+.list__view .container .product__buttons .cart__button .button__content, .list__view .container .product__buttons .fav__button .button__content {
+  margin-top: -5px;
+}
+
+.list__view .container .product__buttons .cart__button i, .list__view .container .product__buttons .fav__button i {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=ListView.css.map */

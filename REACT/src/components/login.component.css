@@ -1,0 +1,299 @@
+.containerBox {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(172, 172, 172, 0.52)), to(rgba(0, 0, 0, 0.93))), url("../images/domenico-loia-hGV2TfOh0ns-unsplash@2x.png");
+  background-image: linear-gradient(to bottom, rgba(172, 172, 172, 0.52), rgba(0, 0, 0, 0.93)), url("../images/domenico-loia-hGV2TfOh0ns-unsplash@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerBox .containerLeft {
+  height: 300px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.containerBox .containerLeft .companyLogo {
+  margin-top: 100px;
+}
+
+.containerBox .containerLeft .companyLogo a {
+  text-decoration: none;
+  color: #a83232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerBox .containerLeft .companyLogo a .white {
+  color: white;
+}
+
+.containerBox .containerLeft .bar {
+  margin: 0 0 15px 0;
+  width: 100px;
+  height: 10px;
+  background-color: #a83232;
+}
+
+.containerBox .containerRight {
+  background: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6px;
+}
+
+.containerBox .containerRight .registration {
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.containerBox .containerRight .title {
+  text-align: center;
+  margin: 10px;
+}
+
+.containerBox .containerRight .loginBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.containerBox .containerRight .loginBtn .login {
+  border-radius: 3px;
+  border: none;
+  width: auto;
+  margin: 5px;
+  padding: 0 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 40px;
+}
+
+.containerBox .containerRight .loginBtn .green {
+  background: black;
+  color: white;
+}
+
+.containerBox .containerRight .loginBtn .green .logo {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/tes.png);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerBox .containerRight .loginBtn .blue {
+  background: #4267B2;
+  color: white;
+}
+
+.containerBox .containerRight .loginBtn .blue .logo {
+  height: 20px;
+  width: 20px;
+  color: blue;
+  background-image: url(../images/fb-64.png);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerBox .containerRight .divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20px;
+  margin-left: -60px;
+}
+
+.containerBox .containerRight .divider p {
+  background-color: black;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.containerBox .containerRight .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 20px;
+}
+
+.containerBox .containerRight .signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerBox .containerRight .signIn .signInBtn {
+  border-radius: 6px;
+  border: none;
+  width: auto;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 40px;
+  color: white;
+  background: #FD2E2E;
+}
+
+.containerBox .containerRight p {
+  margin: 20px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.containerBox .containerRight p a {
+  text-decoration: none;
+  color: #B2002D;
+  margin-left: 5px;
+}
+
+.sign__in--apple, .sign__in--facebook {
+  width: 327px;
+  height: 48px;
+  border-radius: 6px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 20% 40%;
+}
+
+.sign__in--apple {
+  background-color: black;
+  color: white;
+  margin-bottom: 15px;
+  background-image: url(../images/apple-64.png);
+  padding: 10px;
+}
+
+.sign__in--facebook {
+  background-color: blue;
+  color: white;
+  background-image: url(../images/fb-64.png);
+  padding: 10px;
+}
+
+.divide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.divide hr {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 1px;
+  width: 100px;
+  background-color: #f80909;
+  border: 1px solid transparent;
+}
+
+.divide .h1 {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.divide .h2 {
+  margin-left: 10px;
+}
+
+.bar {
+  margin-top: 20px;
+}
+
+.sign__up {
+  margin-top: 10px;
+  width: 350px;
+  height: 48px;
+  background-color: #FD2E2E;
+  border-radius: 8px;
+  color: white;
+  border: 0;
+  padding: 5px;
+}
+
+.terms_agreement {
+  width: 196px;
+  height: 28px;
+  font-size: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=login.component.css.map */
