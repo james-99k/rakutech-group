@@ -1,0 +1,116 @@
+.container{
+
+
+    .store{
+
+        display: flex;
+        flex-basis: 100%;
+        width: 100%;
+        margin: 0 145px;
+        max-width: 960px;
+
+        &__filter{
+
+            display: flex;
+            flex-direction: column;
+            margin-left: -60px;
+
+        }
+
+        &__body{
+
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100vh;
+                
+        .store__banner{
+
+            .product_banner_sub{
+
+                top: -100px;
+                overflow: hidden;
+                display: flex;
+                width: 870px;
+                height: 450px;
+                padding: 0 0 0 100px;
+                margin-left: 20px;
+            
+                .product_banner_text_sub{
+            
+                    display: flex;
+                    flex-direction: column;
+                    color: #FFFFFF;
+                    flex-basis: 20%;
+            
+                        h1{
+            
+                            font-size: 42px;
+            
+                        }
+            
+                        p{
+            
+                            font-size: 16px;
+            
+                        }
+            
+                        a{
+            
+                            font-size: 14px;
+            
+                        }
+            
+            
+                    h1{
+            
+                        font-size: 66px;
+                        font-weight: lighter;
+            
+                    }
+                        
+                    p{
+            
+                        margin-top:10px;
+                        font-size: 24px;
+                        width: 450px;
+                        font-weight: normal;
+            
+                    }
+            
+                    a{
+            
+                        margin-top: 80px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                
+                    }
+            
+                }
+            
+                .product_banner_image_sub{
+            
+                    display: flex;
+                    justify-content: center;
+                    flex-basis: 80%;
+                    z-index: -1;
+                    margin-left: -90px;
+                    width: 665px;
+                    height: 639px;
+            
+                }
+            }
+        }
+
+        .store__list_filter{
+
+            display: flex;
+            flex-basis: 100%;
+            width: 100%;
+
+        }
+
+        }
+
+    }
+}

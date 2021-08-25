@@ -1,0 +1,45 @@
+$pink:#E14491;
+$orange:#D4A9A5;
+
+$body-margin: 0px 350px 0 350px;
+$div-padding: 0px 350px 0 350px;
+$marker: 1px solid black;
+$background: #F6F7F8;
+$link-blue: #33A0FF;
+$promo-text: #C1C8CE;
+
+
+.link-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: $background;
+    font-family: 'Proxima Nova Rg';
+    font-size: 12px;
+
+    &__home {
+        margin-right: 10px;
+        color: $link-blue;
+
+        .links{
+
+            text-decoration: none;
+            color: $link-blue;
+
+        }
+    }
+
+    &__slash {
+        margin-right: 10px;
+    }
+
+    &__accessories {
+        margin-right: 10px;
+        color: $link-blue;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,40 @@
+.pagination{
+
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;
+
+    .container{
+
+        display: flex;
+        background-color: #FAFAFB;
+        height: 56px;
+        border-radius: 4px;
+        justify-content: center;
+        
+
+        button{
+
+            background-color: #FAFAFB;
+            border: 1px solid transparent;
+            font-size: 18px;
+            width: 56px;
+            height: 56px;
+
+            &:hover{
+
+                background-color: #d4d4d4;
+
+            }
+
+        }
+        .active{
+
+            background-color: black;
+            color: white;
+
+        }    
+
+    }
+
+}

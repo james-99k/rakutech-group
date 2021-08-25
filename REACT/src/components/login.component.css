@@ -24,6 +24,10 @@
   border-radius: 6px;
 }
 
+.containerBox .containerLeft .companyLogo {
+  margin-top: 100px;
+}
+
 .containerBox .containerLeft .companyLogo a {
   text-decoration: none;
   color: #a83232;
@@ -36,6 +40,13 @@
   color: white;
 }
 
+.containerBox .containerLeft .bar {
+  margin: 0 0 15px 0;
+  width: 100px;
+  height: 10px;
+  background-color: #a83232;
+}
+
 .containerBox .containerRight {
   background: white;
   height: -webkit-fit-content;
@@ -45,6 +56,12 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 6px;
+}
+
+.containerBox .containerRight .registration {
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 14px;
 }
 
 .containerBox .containerRight .title {
@@ -74,6 +91,7 @@
   border: none;
   width: auto;
   margin: 5px;
+  padding: 0 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,19 +102,22 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
-  width: 70%;
+  width: 100%;
+  height: 40px;
 }
 
 .containerBox .containerRight .loginBtn .green {
-  background: #4285F4;
+  background: black;
   color: white;
 }
 
 .containerBox .containerRight .loginBtn .green .logo {
-  height: 50px;
-  width: 50px;
-  background: white;
-  color: green;
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/tes.png);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .containerBox .containerRight .loginBtn .blue {
@@ -105,9 +126,13 @@
 }
 
 .containerBox .containerRight .loginBtn .blue .logo {
-  height: 50px;
-  width: 50px;
+  height: 20px;
+  width: 20px;
   color: blue;
+  background-image: url(../images/fb-64.png);
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .containerBox .containerRight .divider {
@@ -118,11 +143,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 20px;
+  margin-left: -60px;
 }
 
 .containerBox .containerRight .divider p {
+  background-color: black;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid transparent;
 }
 
 .containerBox .containerRight .input {
@@ -188,5 +215,85 @@
   text-decoration: none;
   color: #B2002D;
   margin-left: 5px;
+}
+
+.sign__in--apple, .sign__in--facebook {
+  width: 327px;
+  height: 48px;
+  border-radius: 6px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 20% 40%;
+}
+
+.sign__in--apple {
+  background-color: black;
+  color: white;
+  margin-bottom: 15px;
+  background-image: url(../images/apple-64.png);
+  padding: 10px;
+}
+
+.sign__in--facebook {
+  background-color: blue;
+  color: white;
+  background-image: url(../images/fb-64.png);
+  padding: 10px;
+}
+
+.divide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.divide hr {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 1px;
+  width: 100px;
+  background-color: #f80909;
+  border: 1px solid transparent;
+}
+
+.divide .h1 {
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.divide .h2 {
+  margin-left: 10px;
+}
+
+.bar {
+  margin-top: 20px;
+}
+
+.sign__up {
+  margin-top: 10px;
+  width: 350px;
+  height: 48px;
+  background-color: #FD2E2E;
+  border-radius: 8px;
+  color: white;
+  border: 0;
+  padding: 5px;
+}
+
+.terms_agreement {
+  width: 196px;
+  height: 28px;
+  font-size: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=login.component.css.map */

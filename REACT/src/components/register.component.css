@@ -45,6 +45,10 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .containerBox .containerRight .title {
@@ -71,9 +75,12 @@
 
 .containerBox .containerRight .title .logIn p {
   margin: 0;
+  font-size: 15px;
 }
 
 .containerBox .containerRight .title .logIn a {
+  font-weight: bold;
+  font-size: 20px;
   padding-left: 5px;
   text-decoration: none;
   color: #FD2E2E;
@@ -132,9 +139,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  margin-left: 80px;
+}
+
+.form-control {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=register.component.css.map */

@@ -1,0 +1,145 @@
+.footer{
+
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+
+    .upper{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px 250px 0 250px;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 80px;
+        justify-content: space-evenly;
+
+    }
+    .footer_description{
+        
+        display: flex;
+        flex-direction: column;
+        flex-basis: 20%;
+        
+        h3{
+
+            color: gray;
+            font-size: 32px;
+
+        }
+
+        .footer_text{
+
+            display: flex;
+            font-size: 12px;
+
+        }
+        
+    }
+
+    .social_media , .contact{
+
+        padding: 50px 30px 0 30px;
+        justify-content: flex-start;
+        flex-basis: 20%;
+
+        .smLogo{
+
+            display: flex;
+            flex-basis: 50%;
+            justify-content: flex-start;
+
+            .webLogo{
+
+                flex-basis: 15%;
+                color: #03A9F4;
+
+            }
+
+        }
+
+        h2{
+
+            font-size: 18px;
+
+        }
+        p{
+
+            font-size: 12px;
+
+        }
+
+    }
+
+    .lower{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 40px 0 40px 0;
+
+        
+        ul{
+
+            padding: 0px 35px 0px 35px;
+
+        }
+
+        .footer_list{
+
+            list-style-type: none;
+            margin: 0px;
+
+            h4, li{
+
+                padding: 10px 0px 10px 0px;
+
+            }
+
+            h4{
+
+                font-size: 18px;
+
+            }
+
+            li{
+
+                font-size: 14px;
+
+            }
+
+        }
+
+    }
+
+    .payment{
+
+        border-top: 1px solid lightgray;
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: row;
+        padding: 0 350px 0 350px;
+        padding-top: 40px;
+
+        p{
+
+            font-size: 14px;
+            color: #C1C8CE;
+            flex-basis: 50%;
+
+        }
+        .payment__option{
+
+            display: flex;
+            justify-content: flex-end;
+            flex-basis: 100%;
+            flex-direction: row;
+            list-style-type: none;
+
+
+        }
+
+    }
+
+}

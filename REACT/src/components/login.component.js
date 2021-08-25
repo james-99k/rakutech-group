@@ -59,7 +59,7 @@ class Login extends Component {
     if (this.checkBtn.context._errors.length === 0) {
       dispatch(login(this.state.username, this.state.password))
         .then(() => {
-          history.push("/profile");
+          history.push("/");
           window.location.reload();
         })
         .catch(() => {
@@ -78,16 +78,19 @@ class Login extends Component {
     const { isLoggedIn, message } = this.props;
 
     if (isLoggedIn) {
-      return <Redirect to="/profile" />;
+      return <Redirect to="/" />;
     }
 
     return (
+
+      
       <div className="containerBox">
 
         <div className="containerLeft">
           <div className="companyLogo">
-            <Link to={"/"}><a><h1 className="white">RAKU</h1><h1>TECH</h1></a></Link>
+            <Link to={"/"}><a><h1 className="white">Onestop</h1><h1>Tech</h1></a></Link>
           </div>
+          <div className="bar"></div>
           <p>Browse from over 500 devices in your area.</p>
         </div>
 
@@ -98,12 +101,12 @@ class Login extends Component {
           <div className="loginBtn">
             <button className="login green">
               <div className="logo">
-                <h1>G</h1>
+                
               </div>Sign in with Google
             </button>
             <button className="login blue">
               <div className="logo">
-                <h1>F</h1>
+                
               </div>Continue with Facebook</button>
           </div>
           <div className="divider">
@@ -170,8 +173,9 @@ class Login extends Component {
           </Form>
         </div>
       </div>
+
     );
-  }
+   }
 }
 
 function mapStateToProps(state) {

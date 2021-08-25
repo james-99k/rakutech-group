@@ -1,0 +1,45 @@
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.promo .best-seller {
+  margin-top: 50px;
+  font-family: 'Proxima Nova Rg';
+  font-size: 18px;
+  font-weight: bold;
+  color: #C1C8CE;
+}
+
+.promo .card {
+  padding: 20px 0 60px 0;
+  width: 90%;
+}
+
+.promo .card__image {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: 60px;
+}
+
+.promo .catalogue_item {
+  margin-top: 50px;
+  width: 85%;
+  background-color: gray;
+  padding: 20px 0 50px 25px;
+  border-radius: 10px;
+}
+
+.promo .catalogue_item img {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=Promo.css.map */

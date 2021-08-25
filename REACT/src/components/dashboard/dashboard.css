@@ -1,0 +1,170 @@
+.dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard__top .statistics {
+  height: 290px;
+  width: 650px;
+  background: white;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.dashboard__top .statistics__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+}
+
+.dashboard__top .statistics__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.dashboard__top .statistics__tab .tab {
+  padding: 0 5px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.dashboard__top .statistics__tab .tab.active, .dashboard__top .statistics__tab .tab:hover {
+  background: #464545;
+  color: white;
+  border-radius: 6px;
+}
+
+.dashboard__top .calendar {
+  height: 290px;
+  width: 250px;
+  background: white;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.dashboard__top .calendar__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+}
+
+.dashboard__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard__bottom .traffic {
+  height: 250px;
+  width: 285px;
+  background: white;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.dashboard__bottom .traffic__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+}
+
+.dashboard__bottom .tickets {
+  height: 250px;
+  width: 285px;
+  background: white;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.dashboard__bottom .tickets__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+}
+
+.dashboard__bottom .sources {
+  height: 250px;
+  width: 280px;
+  background: white;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.dashboard__bottom .sources__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+}
+/*# sourceMappingURL=dashboard.css.map */

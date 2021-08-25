@@ -1,0 +1,44 @@
+$promo-text: #C1C8CE;
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    .best-seller {
+
+        margin-top: 50px;
+        font-family: 'Proxima Nova Rg';
+        font-size: 18px;
+        font-weight: bold;
+        color: $promo-text;
+
+    }
+
+    .card{
+
+        padding: 20px 0 60px 0;
+        width: 90%;
+
+        &__image{
+            justify-self: center;
+            margin-left: 60px;
+        }
+
+    }
+
+    .catalogue_item{
+        
+        margin-top: 50px;
+        width: 85%;
+        background-color: gray;
+        padding: 20px 0 50px 25px;
+        border-radius: 10px;
+
+        img{
+            margin-right: 20px;
+        }
+
+    }
+}

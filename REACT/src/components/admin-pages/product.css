@@ -1,0 +1,39 @@
+.productList {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: 550px;
+  margin: 10px;
+  background: white;
+  border-radius: 6px;
+}
+
+.productList .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productList .tab .box {
+  padding: 10px;
+}
+
+.productList .tab span {
+  font-weight: bold;
+}
+
+.productList .tab button {
+  border: none;
+  border-radius: 6px;
+  background: #a83232;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=product.css.map */

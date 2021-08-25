@@ -1,0 +1,98 @@
+// colors
+$white: #FFFFFF;
+$card-title: #262626;
+$card-border: #F6F7F8;
+$price: #FD2E2E;
+$price-discounted: #E5E5E5;
+$star: #ECD345;
+$star-gray: #BDBDBD;
+$family: 'Proxima Nova Rg';
+
+.container {
+
+    // display: flex;
+    // flex-direction: row;
+    // flex-basis: 100%;
+    // width: 80%;
+    // flex-wrap: wrap;
+    // justify-content: center;
+
+    .card {
+
+        border: 1px solid rgb(243, 238, 238);
+        height: 320px;
+        width: 270px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        &__image {
+    
+            height: fit-content;
+            width: fit-content;
+            
+            &--container{
+
+            height: fit-content;
+            width: fit-content;
+
+            }
+
+            &--pic {
+                width: 150px;
+                height: 150px;
+            }
+    
+            &:hover {
+                opacity: 50%;
+                cursor: pointer;
+            }
+        }
+    
+        &__title {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            color: $card-title;
+            font-family: $family;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    
+        &__rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            height: 10px;
+    
+            &--yellow {
+                color: $star;
+            }
+    
+            &--gray {
+                color: $star-gray;
+            }
+        }
+    
+        &__price {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            font-family: $family;
+            font-size: 16px;
+    
+            &--discounted {
+                color: $price;
+            }
+    
+            &--original {
+                margin-left: 15px;
+                color: $price-discounted;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+

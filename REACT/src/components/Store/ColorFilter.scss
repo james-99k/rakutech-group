@@ -1,0 +1,75 @@
+.filter__color{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #F6F7F8;
+    width: 270px;
+    margin-top: 20px;
+
+    h2{
+
+        font-size: 23px;
+        font-weight: bolder;
+        margin-top: 10px;
+        padding-left: 20px;
+        
+    }
+
+    .category__color{
+
+        display: flex;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        list-style-type: none;
+        justify-content: space-between;
+
+
+        .blue{
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #006CFF;
+
+        }
+
+        .red{
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #FC3E39;
+
+        }
+
+        .black{
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+
+        }
+
+        .yellow{
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color:#FFF600;
+
+        }
+
+        .pink{
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color:#FF00B4;
+
+        }
+
+    }
+
+}

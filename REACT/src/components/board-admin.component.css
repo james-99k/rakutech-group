@@ -1,0 +1,12 @@
+.adminPage {
+  background: #d8d6d6;
+  height: 92vh;
+}
+
+.adminContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+/*# sourceMappingURL=board-admin.component.css.map */

@@ -1,0 +1,59 @@
+.filter{
+
+    display: flex;
+    width: 270px;
+    border-radius: 4px;
+    background-color: #F6F7F8;
+
+    &__container{
+
+        padding-left: 20px;
+        padding-top: 15px;
+
+    }
+    
+    &__header{
+
+        h4{
+        font-size: 23px;
+        font-weight: bolder;
+        }
+    }
+
+    &__list{
+
+        display: flex;
+        flex-basis: 100%;
+
+        ul{
+            
+            list-style-type: none;
+            
+            li{
+                h6{font-weight: bold;}
+
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            h6{
+                font-size: 14px;
+            }
+        }
+
+        
+        
+    }
+    .number{
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .category{
+
+        margin-top: 10px;
+        width: 200px;
+        margin-left: -40px;
+
+    }
+
+}

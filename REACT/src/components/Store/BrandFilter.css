@@ -1,0 +1,44 @@
+.brand {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 270px;
+  background-color: #F6F7F8;
+  border-radius: 4px;
+}
+
+.brand .filter__brand {
+  padding-left: 20px;
+}
+
+.brand .filter__brand h2 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.brand .filter__brand .list_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.brand .filter__brand .list_box ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.brand .filter__brand .list_box .category__brand {
+  font-weight: bolder;
+}
+
+.brand .filter__brand .list_box .brand__count {
+  margin-left: 130px;
+}
+/*# sourceMappingURL=BrandFilter.css.map */
